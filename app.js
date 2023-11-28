@@ -24,13 +24,6 @@ app.use(
       origin: process.env.FRONTEND_URL
     })
   );
-
-  app.use(
-    cors({
-      credentials: true,
-      origin: "http://localhost:3000"
-    })
-  );
   
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
