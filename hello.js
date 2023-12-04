@@ -6,5 +6,6 @@ function HelloRoutes(app) {
     res.send("Welcome to Full Stack!");
   }
   app.get("/hello", hello);
+  app.get("/", fullStack)
 }
 export default HelloRoutes;
